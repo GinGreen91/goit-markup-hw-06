@@ -334,7 +334,6 @@ button {
 	color: #404bbf;
 }
 
-
 .customers-logo {
 	fill: currentColor;
 }
@@ -536,6 +535,7 @@ button {
 	background-color: #fcfcfc;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
+	padding: 72px 24px 24px;
 }
 
 .modal-close-btn {
@@ -554,7 +554,7 @@ button {
 	transition: background-color var(--transition);
 }
 
-.model-close-btn-icon{
+.model-close-btn-icon {
 	transition: fill var(--transition);
 }
 
@@ -572,4 +572,99 @@ button {
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
+}
+/*------------------MODAL FORM------------------*/
+.contact-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-window-title {
+	font-weight: 500;
+	font-size: 16px;
+	color: var(--dark);
+	text-align: center;
+	margin-bottom: 14px;
+}
+
+.contact_form_input {
+	width: 100%;
+	height: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	padding: 11px 38px;
+	transition: border-color var(--transition);
+	/*проверить в дз шрифт и цвет текста внутри*/
+}
+
+.contact_form_input:focus {
+	outline: none;
+	border: 1px solid #4d5ae5;
+}
+
+.contact_form_input:focus + .input-form-icon {
+	fill: #4d5ae5;
+}
+
+.lable-text {
+	display: block;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+	color: var(--subtle-text);
+	margin-top: 8px;
+	margin-bottom: 4px;
+}
+
+.form-input-wrapper {
+	display: block;
+	position: relative;
+}
+
+.input-form-icon {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: 19px;
+	transition: fill var(--transition);
+}
+
+.modal-textarea-form {
+	width: 100%;
+	height: 120px;
+	padding: 8px 16px;
+	resize: none;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	transition: border-color var(--transition);
+}
+
+.modal-textarea-form:focus {
+	outline: none;
+	border: 1px solid #4d5ae5;
+}
+
+.modal-textarea-form::placeholder {
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+	color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-form::before {
+	display: block;
+	width: 16px;
+	height: 16px;
+	border: 1.25px solid #2e2f42;
+	border-radius: 2px;
+	content: "";
+	cursor: pointer;
+}
+
+.check-form:checked + .checkbox-form::before {
+	background-color: var(--primary-brand);
+	background-image: url(../image/check-icon.svg);
+	/* background-size: 10px 8px;
+	background-position: center center;
+	background-repeat: no-repeat; */
 }
