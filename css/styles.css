@@ -651,6 +651,10 @@ button {
 	color: rgba(117, 117, 117, 0.5);
 }
 
+.check-form{
+	
+}
+
 .checkbox-form::before {
 	display: block;
 	width: 16px;
@@ -659,12 +663,31 @@ button {
 	border-radius: 2px;
 	content: "";
 	cursor: pointer;
+	margin-right: 8px;
+	
 }
 
 .check-form:checked + .checkbox-form::before {
 	background-color: var(--primary-brand);
 	background-image: url(../image/check-icon.svg);
-	/* background-size: 10px 8px;
-	background-position: center center;
-	background-repeat: no-repeat; */
+	/* background-size: 10px 8px; */
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1.25px solid #404bbf;
+	border-radius: 2px;
+}
+
+.check-form:focus + .checkbox-form::before {
+	outline: 1.25px solid #404bbf;
+}
+
+.checkbox-form {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+	color: #757575;
+	margin-bottom: 24px;
+
 }
