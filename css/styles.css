@@ -654,7 +654,6 @@ button {
 	border-radius: 4px;
 	padding: 11px 38px;
 	transition: border-color var(--transition);
-	/*проверить в дз шрифт и цвет текста внутри*/
 }
 
 .contact_form_input:focus {
@@ -762,7 +761,6 @@ button {
 	min-width: 169px;
 	transition: background-color var(--transition);
 	align-self: center;
-	/* margin: 0 auto; */
 	margin-top: 24px;
 }
 
