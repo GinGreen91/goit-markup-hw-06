@@ -639,6 +639,10 @@ button {
 	flex-direction: column;
 }
 
+.label-contact-form {
+	margin-bottom: 8px;
+}
+
 .modal-window-title {
 	font-weight: 500;
 	font-size: 16px;
@@ -671,7 +675,6 @@ button {
 	line-height: 1.33;
 	letter-spacing: 0.04em;
 	color: var(--subtle-text);
-	margin-top: 8px;
 	margin-bottom: 4px;
 }
 
@@ -688,6 +691,10 @@ button {
 	transition: fill var(--transition);
 }
 
+.label-text-area {
+	margin-bottom: 16px;
+}
+
 .modal-textarea-form {
 	width: 100%;
 	height: 120px;
@@ -696,7 +703,6 @@ button {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	transition: border-color var(--transition);
-	margin-bottom: 16px;
 }
 
 .modal-textarea-form:focus {
