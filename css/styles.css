@@ -84,6 +84,8 @@ button {
 .header-navigation-list {
 	display: flex;
 	gap: 40px;
+	flex-wrap: wrap;
+	
 }
 
 .header-navigation-item {
@@ -98,6 +100,7 @@ button {
 	gap: 40px;
 	margin-left: auto;
 	padding: 24px 0 28px;
+	flex-wrap: wrap;
 }
 .header-contacts-link {
 	font-size: 16px;
